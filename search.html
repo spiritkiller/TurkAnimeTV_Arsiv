@@ -14,7 +14,7 @@
   gtag('js', new Date());
   gtag('config', 'G-TB3R2BMC9E');
 </script>
-<title>TürkAnime Arşiv — İzle</title>
+<title>Animeci Melkor — İzle</title>
 <!-- ============================================================
      📊 OYNATICI TELEMETRİSİ (MOBIL-QOL-PLANI.md §12.6, 28.09.2026)
      ------------------------------------------------------------
@@ -123,10 +123,10 @@ svg{vertical-align:-2px}
 /* ===== üst çubuk ===== */
 header.top{position:sticky;top:0;z-index:50;background:rgba(13,19,21,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
 .top-in{display:flex;align-items:center;gap:var(--sp-3);padding:10px var(--sp-4);max-width:var(--container);margin:0 auto}
-/* LOGO: "turkanime arsiv logo.png" (2430x738, 1,4 MB) -> logo.png 342x104 / 55 KB.
+/* LOGO: "animeci melkor logo" (2430x738, 1,4 MB) -> logo.png 342x104 / 55 KB.
    GÖSTERİM 52px, kaynak 2x. Ölçüm: logonun kenarlarında neredeyse boşluk yok
    (alfa kutusu 2238x719 / 2430x738, dolu piksel %52,3) yani kırpma işe yaramıyordu;
-   sorun GÖSTERİM yüksekliğiydi — 38px'te karakter ve "TürkAnime" yazısı okunmuyordu.
+   sorun GÖSTERİM yüksekliğiydi — 38px'te karakter ve "Animeci Melkor" yazısı okunmuyordu.
    width/height öznitelikleri sabit: görüntü alanı rezerve edilir, layout shift olmaz. */
 .logo{display:flex;align-items:center;cursor:pointer;flex:none}
 .logo:hover{text-decoration:none;opacity:.9}
@@ -523,7 +523,7 @@ html{scroll-behavior:smooth}
 
 <header class="top">
   <div class="top-in">
-    <a class="logo" href="#/" aria-label="TürkAnime Arşiv — ana sayfa"><img src="logo.png" width="342" height="104" alt="TürkAnime Arşiv" decoding="async" fetchpriority="high"></a>
+    <a class="logo" href="#/" aria-label="Animeci Melkor — ana sayfa"><img src="logo.png" width="419" height="104" alt="Animeci Melkor" decoding="async" fetchpriority="high"></a>
     <nav class="topnav" aria-label="Ana gezinme">
       <a href="#/" data-nav="ana">Ana sayfa</a>
       <a href="#/animeler" data-nav="animeler">Animeler</a>
@@ -542,9 +542,9 @@ html{scroll-behavior:smooth}
 <div class="wrap"><main id="app"></main></div>
 
 <footer class="foot">
-  <p><b>türkanime<span>arşiv</span></b></p>
+  <p><b>animeci<span>melkor</span></b></p>
   <p>6.000'den fazla animenin bölümleri ve oynatma linkleri tek sayfada.</p>
-  <p class="foot-legal"><strong>Yasal Uyarı</strong>TürkAnime Arşiv hiçbir video dosyasını barındırmaz; tüm videolar 3. taraf sağlayıcılardan iframe embed ile sunulur.</p>
+  <p class="foot-legal"><strong>Yasal Uyarı</strong>Animeci Melkor hiçbir video dosyasını barındırmaz; tüm videolar 3. taraf sağlayıcılardan iframe embed ile sunulur.</p>
 </footer>
 
 <nav class="bnav" aria-label="Alt menü">
@@ -559,7 +559,7 @@ html{scroll-behavior:smooth}
      76 doğrulanmış ölü link (BYSE, PIXELDRAIN) oynatıcıya geri dönüyordu ve
      HİÇBİR uyarı çıkmıyordu. Artık hem konsola hem arayüze düşüyor. -->
 <script>window.KALDIRILAN = window.KALDIRILAN || [];</script>
-<script src="kaldirilan.js" onerror="window.KALDIRILAN_YOK=1;console.warn('[turkanime] kaldirilan.js yuklenemedi - kaldirilan linkler UYGULANMIYOR')"></script>
+<script src="kaldirilan.js" onerror="window.KALDIRILAN_YOK=1;console.warn('[animeci-melkor] kaldirilan.js yuklenemedi - kaldirilan linkler UYGULANMIYOR')"></script>
 <!-- 📱 anilist.js ARTIK DEFER (28.09.2026, MOBIL-QOL-PLANI.md §1)
 
      ÖLÇÜM: bu dosya 2.677 BAYT. v1'de `defer`/`async` YOKTU -> ilk boyamayı
@@ -576,7 +576,7 @@ html{scroll-behavior:smooth}
      anilist.js oynatıcının görselleriyle yarışabilirdi. -->
 <script src="anilist.js" defer
         onload="window.dispatchEvent(new Event('anilist'))"
-        onerror="console.warn('[turkanime] anilist.js yuklenemedi - AniList zenginlestirmesi kapali')"></script>
+        onerror="console.warn('[animeci-melkor] anilist.js yuklenemedi - AniList zenginlestirmesi kapali')"></script>
 <script>
 /* ---- yönetici eklemeleri: eklenen.js (turkanime_yonet.py üretir) ----
    KALDIRILAN gibi çalışma anında uygulanan override verisidir; b/ dosyalarını
@@ -593,7 +593,7 @@ window.EKLENEN = window.EKLENEN || [];
   /* onerror YOKSA: 404 alan yönetici eklemelerinin sessizce hiç
      uygulanmadığını anlaması imkânsızdı (route() de hiç çağrılmazdı). */
   s.onerror = function(){
-    console.warn('[turkanime] eklenen.js yuklenemedi - yonetici eklemeleri UYGULANMIYOR');
+    console.warn('[animeci-melkor] eklenen.js yuklenemedi - yonetici eklemeleri UYGULANMIYOR');
   };
   s.src = 'eklenen.js' + bust;
   document.head.appendChild(s);
@@ -914,10 +914,10 @@ function buildIndirScripts(slug, data, tumu){
   const rows = data.map(ep=>({ep, links: kaldirilanFiltre(ep.links).filter(l=>l.tip==='url')
                                           .concat(eklenenLinkler(slug, ep, data).filter(l=>l.tip==='url'))}))
                    .filter(x=> x.links.length);
-  const b = ['@echo off','chcp 65001 >nul','rem TurkAnime Arsiv - '+slug,
+  const b = ['@echo off','chcp 65001 >nul','rem Animeci Melkor Arsiv - '+slug,
              'rem yt-dlp gerekli: https://github.com/yt-dlp/yt-dlp',
              'rem kaldirilan linkler bu betikte yok','cd /d "%~dp0"',''];
-  const s = ['#!/usr/bin/env bash','# TurkAnime Arsiv - '+slug,
+  const s = ['#!/usr/bin/env bash','# Animeci Melkor Arsiv - '+slug,
              '# yt-dlp gerekli: https://github.com/yt-dlp/yt-dlp','# set -e',''];
   for (const {ep, links} of rows){
     const base = bolumBase(ep);
@@ -1030,12 +1030,12 @@ function linkIndirScript(slug, ad, url, batMi){
   const satir = 'yt-dlp "'+(batMi ? u.replace(/%/g,'%%') : u)+'" -o "'+nm+'.mp4"';
   if (!batMi){
     return ('#!/usr/bin/env bash\n'
-      + '# TurkAnime Arsiv - '+slug+' - '+nm+'\n'
+      + '# Animeci Melkor Arsiv - '+slug+' - '+nm+'\n'
       + '# yt-dlp gerekli: https://github.com/yt-dlp/yt-dlp\nset -e\n'
       + satir + '\n');
   }
   return ('@echo off\r\nchcp 65001 >nul\r\n'
-    + 'rem TurkAnime Arsiv - '+slug+' - '+nm+'\r\n'
+    + 'rem Animeci Melkor Arsiv - '+slug+' - '+nm+'\r\n'
     + 'rem yt-dlp gerekli: https://github.com/yt-dlp/yt-dlp\r\n'
     + 'cd /d "%~dp0"\r\n' + satir + '\r\npause\r\n');
 }
@@ -1527,7 +1527,7 @@ function anaSayfayaDon(ev){
 
 /* ============ ana sayfa / arama sonuçları ============ */
 function renderHome(){
-  document.title = 'TürkAnime Arşiv — İzle';
+  document.title = 'Animeci Melkor — İzle';
   if (lastQuery){
     const results = searchAnime(lastQuery);
     const pages = Math.max(1, Math.ceil(results.length/PAGE));
@@ -1562,7 +1562,7 @@ function renderHome(){
 /* ============ M3: Animeler — 6.000+ animenin tam listesi ============ */
 let anSort = 'eps', anQ = '', anPage = 1;
 function renderAnimeler(){
-  document.title = 'Animeler — tüm liste | TürkAnime Arşiv';
+  document.title = 'Animeler — tüm liste | Animeci Melkor';
   let items;
   /* M1/M2/M3 düzeltmesi: sıralama seçeneği ARAMA YAPILMIŞKEN DE uygulanıyordu
      — `anSort!=='ad'` koşulu yüzünden "başlık (A→Z)" seçiliyken liste
@@ -1615,7 +1615,7 @@ function renderAnimeler(){
 
 /* ============ M3: Kategoriler — harf kartları + hazır listeler ============ */
 function renderKategoriler(){
-  document.title = 'Kategoriler | TürkAnime Arşiv';
+  document.title = 'Kategoriler | Animeci Melkor';
   KATS.forEach(k=>{ if (k.n==null) k.n = ANIME.filter(k.f).length; });
   const harfSay = new Map();
   for (const a of ANIME){
@@ -1710,7 +1710,7 @@ function renderAnime(slug, data){
     `:`<div class="empty"><div class="big">${ic('film')}</div>Bu animede bölüm kaydı yok.</div>`}
     ${relatedHtml(slug)}
   `;
-  document.title = `${meta.baslik} izle — tüm bölümler | TürkAnime Arşiv`;
+  document.title = `${meta.baslik} izle — tüm bölümler | Animeci Melkor`;
   const ib = $('#indirBtn');
   if (ib) ib.onclick = ()=>{
     const tt = $('#tumTgl');
@@ -2177,7 +2177,7 @@ function renderOptions(slug, data, bolumId){
       <button class="copybtn" data-cmd="${esc(cmd)}">${esc(cmd)}</button>
     </div>
   `;
-  document.title = `${meta.baslik} — ${ep.ad} | TürkAnime Arşiv`;
+  document.title = `${meta.baslik} — ${ep.ad} | Animeci Melkor`;
   const ei = $('#epIndir');
   if (ei) ei.onclick = ()=>{
     /* 📱 alert() -> düğmenin kendi üstünde flashDone. Aynı bilgi, engelleyici
@@ -2396,7 +2396,7 @@ function renderPlayer(slug, data, bolumId, playerName, idxStr){
       ${epNavHtml(slug, data, ep)}
       <div class="empty"><div class="big">${ic('ban')}</div>${bosMesaj}</div>
       <div class="controls"><a class="btn ghost" href="${listeHref}">${ic('list')} Tüm seçenekler (${optN})</a></div>`;
-    document.title = `${meta.baslik} — ${ep.ad} | TürkAnime Arşiv`;
+    document.title = `${meta.baslik} — ${ep.ad} | Animeci Melkor`;
     return;
   }
   const pNameCur = cur.l.player;
@@ -2490,7 +2490,7 @@ function renderPlayer(slug, data, bolumId, playerName, idxStr){
       </div>
     </div>
   `;
-  document.title = `${meta.baslik}${ep.no!=null?' #'+ep.no:''} — ${pNameCur} | TürkAnime Arşiv`;
+  document.title = `${meta.baslik}${ep.no!=null?' #'+ep.no:''} — ${pNameCur} | Animeci Melkor`;
   bindEpSide(slug, data, ep);   // curEp: sayfalama etkin bölümü "on" tutmaya devam etsin
   /* ============================================================
      📊 OYNATICI ÖLÇÜMÜ (MOBIL-QOL-PLANI.md §12.6)
@@ -2815,7 +2815,7 @@ function route(){
      açılıyordu. ÖLÇÜLDÜ: `?p=3` yazınca `epSayisi: 0`.
      Düzeltme: eşleştirme SORGUSUZ yola yapılır, durum sorgudan okunur. */
   const h = ham.split('?')[0];
-  document.title = 'TürkAnime Arşiv — İzle';
+  document.title = 'Animeci Melkor — İzle';
   navAktif();
   if (!h || h==='#' || h==='#/' || h.startsWith('#/ara')){
     /* hash TAM OLARAK ana sayfa (#/ veya boş) ise liste durumu temizlenir:
@@ -3008,7 +3008,7 @@ window.addEventListener('anilist', ()=>{
        (`:2552` ana/ara · `:2564` animeler · `:2565` kategoriler ·
         anime). Elle dağıtmak yerine ona devret. */
     route();
-  }catch(e){ console.warn('[turkanime] anilist yeniden cizilemedi', e); }
+  }catch(e){ console.warn('[animeci-melkor] anilist yeniden cizilemedi', e); }
 });
 
 /* ============ rastgele anime + mobil alt menü ============ */
