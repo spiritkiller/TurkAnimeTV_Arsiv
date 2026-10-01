@@ -14,7 +14,7 @@
   
 🔗 [**Canlı site**](https://spiritkiller.github.io/TurkAnimeTV_Arsiv/)
 
-🔗 [**Veritabanı dosyalarını indirmek için tıkla**](https://github.com/Nutaliaxd/TurkAnimeTV_Arsiv/releases/tag/Turkanime.db)
+🔗 [**Veritabanı dosyalarını indirmek için tıkla**](https://github.com/spiritkiller/TurkAnimeTV_Arsiv/releases)
 
 </div>
 
