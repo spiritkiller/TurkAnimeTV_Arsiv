@@ -97,7 +97,7 @@ Tarayıcı
 - **Anonim** — 2025'te turkanime.net'ten tüm bölümlerin fansub bilgilerini çekip bizimle paylaştı.
 - [**OpenAnime**](https://github.com/OpenAnime) — Projeyi duyurarak daha fazla kişinin haberdar olmasını sağladı.
 - [**AnimeHaber**](https://www.reddit.com/user/AnimeHaber/) — r/lostmediatr üzerinden duyurdu.
-- [**Burakuslendera**](https://github.com/Burakuslendera) — Varlığı yeter.
+- [**Burakuslendera**](https://github.com/Burakuslendera)
 
 ---
 
