@@ -80,7 +80,7 @@ Tarayıcı
 
 | Kontrol | Sonuç |
 |---|---|
-| Toplam anime | 6.107 |
+| Toplam anime | 6.112 |
 | Toplam video linki | ~317.068 |
 | Gizlenen ölü link | 2.439 (80 + 323 ghbrisk + 69 docs.google + 15 voe.sx + 1.150 cyberfile.me + 19 mega.nz + 783 dood.watch) |
 | Son büyük temizlik | 01 Ekim 2026 |
