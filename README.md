@@ -3,10 +3,10 @@
 
 # TurkAnimeTV Arşiv
 
-**turkanime.tv 19 Eylül 2026'da bir gece ansızın kapandı ve arkasında devasa bir arşiv bıraktı. Bu proje, o arşivi kurtarmak ve erişilebilir kılmak için başlatıldı. Tamamen statik ve sunucusuz (GitHub Pages) çalışan sitemizde 6.107 anime ve 317.068 video linki bulunuyor. Animelerin isimleri, bölüm linkleri, fansub grupları ve çevirmen bilgileri de açık bir şekilde paylaşılmaktadır.**
+**turkanime.tv 19 Eylül 2026'da bir gece ansızın kapandı ve arkasında devasa bir arşiv bıraktı. Bu proje, o arşivi kurtarmak ve erişilebilir kılmak için başlatıldı. Tamamen statik ve sunucusuz (GitHub Pages) çalışan sitemizde 6.112 anime ve 317.068 video linki bulunuyor. Animelerin isimleri, bölüm linkleri, fansub grupları ve çevirmen bilgileri de açık bir şekilde paylaşılmaktadır.**
 
 [![Website](https://img.shields.io/website?url=https%3A%2F%2Fspiritkiller.github.io%2FTurkAnimeTV_Arsiv%2F&label=canlı%20site)](https://spiritkiller.github.io/TurkAnimeTV_Arsiv/)
-[![Anime](https://img.shields.io/badge/anime-6.107-green)](https://spiritkiller.github.io/TurkAnimeTV_Arsiv/)
+[![Anime](https://img.shields.io/badge/anime-6.112-green)](https://spiritkiller.github.io/TurkAnimeTV_Arsiv/)
 [![Video Linki](https://img.shields.io/badge/video%20linki-317.068-blue)](https://spiritkiller.github.io/TurkAnimeTV_Arsiv/)
 [![Son Güncelleme](https://img.shields.io/badge/son%20güncelleme-Ekim%202026-orange)](https://github.com/spiritkiller/TurkAnimeTV_Arsiv/commits/main)
 
@@ -40,7 +40,7 @@ Elde ettiğimiz veritabanı başlangıçta 1,6 milyona yakın link içeriyordu; 
 
 ## Özellikler
 
-- 🔍 **Anlık arama** (`/` kısayolu), sıralanabilir & filtrelenebilir 6.107 animelik tam liste, kategori sayfaları, rastgele anime butonu
+- 🔍 **Anlık arama** (`/` kısayolu), sıralanabilir & filtrelenebilir 6.112 animelik tam liste, kategori sayfaları, rastgele anime butonu
 - ▶️ **Bölüme tıkla → doğrudan player**; KAYNAK çipleriyle kaynaklar arası hızlı geçiş (çalışan kaynak otomatik seçilir)
 - 🏷️ Bölüm bazlı fansub + çevirmen bilgisi (kaynak çiplerinde ve player kartında görünür)
 - 🛡️ **Override mimarisi**: `kaldirilan.js` ve `eklenen.js` ile 6.107 dosyaya dokunmadan anlık link gizleme/ekleme
@@ -54,7 +54,7 @@ Elde ettiğimiz veritabanı başlangıçta 1,6 milyona yakın link içeriyordu; 
 
 ```
 Tarayıcı
- └─ search.html          → tek dosyalık SPA (gömülü arama dizini: 6.107 anime)
+ └─ search.html          → tek dosyalık SPA (gömülü arama dizini: 6.112 anime)
      ├─ anilist.js       → AniList metadata (kapak, banner, özet, puan…)
      ├─ b/<slug>.js      → her animenin bölümleri + video linkleri (6.107 dosya)
      ├─ kaldirilan.js    → çalışma anında gizlenen linkler   (override)
