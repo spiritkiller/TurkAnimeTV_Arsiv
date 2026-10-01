@@ -82,7 +82,7 @@ Tarayıcı
 |---|---|
 | Toplam anime | 6.107 |
 | Toplam video linki | ~317.068 |
-| Gizlenen ölü link | 487 (80 + 323 ghbrisk + 69 docs.google + 15 voe.sx) |
+| Gizlenen ölü link | 1.637 (80 + 323 ghbrisk + 69 docs.google + 15 voe.sx + 1.150 cyberfile.me) |
 | Son büyük temizlik | 01 Ekim 2026 |
 | Aktif video kaynakları | Sibnet (133K), Mail.ru (77K), OK.ru (36K), VK (22K)… |
 
