@@ -514,4 +514,23 @@ window.KALDIRILAN = [
   "https://docs.google.com/file/d/0B96U_bIDa7pXUFZlSUtvTzZHQWM/preview",
   "https://docs.google.com/file/d/0B96U_bIDa7pXcnZrTmN2dmZ5c00/preview",
   "https://docs.google.com/file/d/0B96U_bIDa7pXelVsMlJ3LVhHMUU/preview"
+/* ---------------------------------------------------------------------------
+   2026-10-01 EKLEME: VOE.SX 15 link
+   Dogrulama: 2 bagimsiz asamada HTTP 404 Not Found dondurdugu teyit edildi.
+   --------------------------------------------------------------------------- */
+  "https://voe.sx/e/0hqeg7z58hvj",
+  "https://voe.sx/e/3keqc6skzlsn",
+  "https://voe.sx/e/3zabsqrmdzv4",
+  "https://voe.sx/e/5htafvxzhhea",
+  "https://voe.sx/e/enljysvhk04u",
+  "https://voe.sx/e/fuoo98uwibuz",
+  "https://voe.sx/e/giy4f6c7lqhp",
+  "https://voe.sx/e/hkbljncbwdfi",
+  "https://voe.sx/e/m1stbuqw2l01",
+  "https://voe.sx/e/xrgm6zpvoeds",
+  "https://voe.sx/e/yx1zkbacxvsb",
+  "https://voe.sx/e/yyxrv2y23y9z",
+  "https://voe.sx/e/zedznp7qxknt",
+  "https://voe.sx/e/zpaegtzpqe15",
+  "https://voe.sx/e/zzlpalixnxl1",
 ];
