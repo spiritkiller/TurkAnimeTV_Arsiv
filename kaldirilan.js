@@ -1689,4 +1689,28 @@ window.KALDIRILAN = [
   "https://cyberfile.me/video/embed/wyY1/600x400/video",
   "https://cyberfile.me/video/embed/wyY2/600x400/video",
   "https://cyberfile.me/video/embed/wyY3/600x400/video",
+/* ---------------------------------------------------------------------------
+   2026-10-01 EKLEME: MEGA.NZ 19 link
+   Dogrulama: Resmi MEGA Client API (cs?a=g) sorgusu ile dogrulandi.
+   -9 (silinmis) veya -16 (TOS / telif engeli) donduren linklerdir.
+   --------------------------------------------------------------------------- */
+  "https://mega.nz/embed/#!71AUzRjK!o7-xr_HFoltRy-Y64acKOZV7GgUj0Htp_i70BUJt0Oo",
+  "https://mega.nz/embed/#!Ls5yiChb!YrLpyjoZy1tuid7v8EKOUV-oD0NgRv6fxCmzhGE7YKY",
+  "https://mega.nz/embed/#!PFx2QTTD!fV2F2rjyL3Apyzhh_GMz-lNld37uYU75qjHvXrN564o",
+  "https://mega.nz/embed/#!PZJnmTrZ!BTiuda3wzuSIrTfiqjx1sVg6nPnipJdt2LMoW7lZZmI",
+  "https://mega.nz/embed/#!acAjVbJY!CjrnURP3-rnLRacMdY0W3hUgAqbbzHk9K7XZO-kATsE",
+  "https://mega.nz/embed/#!d21GUCKb!sBT_laCoM87lVHUugSzmwMq94oa82OW0yPshi4Cbyo0",
+  "https://mega.nz/embed/#!l6liUbCJ!8RqLJNFkhm9cwDb-eaDjjWuelxRZswvfjiiqdqaoeqU",
+  "https://mega.nz/embed/#!ndpyyDbI!JvcSv5Y00bcy5lP5PYetl-zk86tuIIrc18EgkssssMw",
+  "https://mega.nz/embed/9lpWiSyY#MEE6zIDIJPXIlFU69ZSErRcMcPMFjvtdgOYcTsEXZ2I",
+  "https://mega.nz/embed/GWpEXSxY!8VofyxjsU4szhuGQiW3AjCbTZki6BcuuFs_7Xsd06WM",
+  "https://mega.nz/embed/Kd9kAAyI#Cf0OzfY-ZfsT2lLJCupr4mtiBE4mF-aLtqYaxL3LGcg",
+  "https://mega.nz/embed/Qh4lVYTB#NPBtBiHqeKwZZ5bwHvEZ4d87P-G7QpngtcnZDAAqTrA",
+  "https://mega.nz/embed/WxwWVKKR#9vzATh_LXWSVdpqCSIoUJ1oUxMUrs5yd2NtvjDM56bc",
+  "https://mega.nz/embed/X8UjRShA#d6pv-sMPS7TqT0dEFleKcbHN8P0X4N3xcBN9JDV6LWc",
+  "https://mega.nz/embed/Z6ZXQQZB#tDoVuy5b-eHLAwBELZUNn7xsOZrj4KlDiHOkPQ3mZwo",
+  "https://mega.nz/embed/ls4w3Z7B#QXV1PkV3LEzUTWmAvW2YI_sDYeVLYfwB26D_oflhcMA",
+  "https://mega.nz/embed/nhQhhIrY#3Zm4c8ySvUVUs_eIbULyuVwgAqlXuqpNUxORRxed1f0",
+  "https://mega.nz/embed/oVFWlLjQ#QpQe1LbNLBO4E9U1jhpO8xxiuL5UMmNJe1kNDK-HRDU",
+  "https://mega.nz/embed/soJ2gJLb#1GM2erxLPrCVjQQ_FoC9pn1W2kSxdaLvE0Rhho_kquk",
 ];
