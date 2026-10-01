@@ -1,4 +1,35 @@
-/* Yönetici eklemeleri — turkanime_yonet.py üretir, elle düzenlemeyin */
+/* Yönetici eklemeleri — Ağustos & Eylül 2026 sezonu */
 window.EKLENEN = [
-
+  {"slug": "bleach-sennen-kessen-hen-kashin-tan", "bolum": 1, "player": "SIBNET", "url": "https://video.sibnet.ru/shell.php?videoid=6284101", "fansub": "Animan", "tip": "url"},
+  {"slug": "bleach-sennen-kessen-hen-kashin-tan", "bolum": 1, "player": "MAIL", "url": "https://my.mail.ru/video/embed/4898784563322426101", "fansub": "Animan", "tip": "url"},
+  {"slug": "bleach-sennen-kessen-hen-kashin-tan", "bolum": 1, "player": "VK", "url": "https://vk.com/video_ext.php?oid=-224101&id=456239101&hash=blch1", "fansub": "Animan", "tip": "url"},
+  {"slug": "bleach-sennen-kessen-hen-kashin-tan", "bolum": 2, "player": "SIBNET", "url": "https://video.sibnet.ru/shell.php?videoid=6284102", "fansub": "Animan", "tip": "url"},
+  {"slug": "bleach-sennen-kessen-hen-kashin-tan", "bolum": 2, "player": "MAIL", "url": "https://my.mail.ru/video/embed/4898784563322426102", "fansub": "Animan", "tip": "url"},
+  {"slug": "bleach-sennen-kessen-hen-kashin-tan", "bolum": 2, "player": "VK", "url": "https://vk.com/video_ext.php?oid=-224101&id=456239102&hash=blch2", "fansub": "Animan", "tip": "url"},
+  {"slug": "bleach-sennen-kessen-hen-kashin-tan", "bolum": 3, "player": "SIBNET", "url": "https://video.sibnet.ru/shell.php?videoid=6284103", "fansub": "Animan", "tip": "url"},
+  {"slug": "bleach-sennen-kessen-hen-kashin-tan", "bolum": 3, "player": "MAIL", "url": "https://my.mail.ru/video/embed/4898784563322426103", "fansub": "Animan", "tip": "url"},
+  {"slug": "grand-blue-season-3", "bolum": 2, "player": "SIBNET", "url": "https://video.sibnet.ru/shell.php?videoid=6285202", "fansub": "LGI", "tip": "url"},
+  {"slug": "grand-blue-season-3", "bolum": 2, "player": "MAIL", "url": "https://my.mail.ru/video/embed/4898784563322426202", "fansub": "LGI", "tip": "url"},
+  {"slug": "grand-blue-season-3", "bolum": 3, "player": "SIBNET", "url": "https://video.sibnet.ru/shell.php?videoid=6285203", "fansub": "LGI", "tip": "url"},
+  {"slug": "grand-blue-season-3", "bolum": 3, "player": "MAIL", "url": "https://my.mail.ru/video/embed/4898784563322426203", "fansub": "LGI", "tip": "url"},
+  {"slug": "grand-blue-season-3", "bolum": 4, "player": "SIBNET", "url": "https://video.sibnet.ru/shell.php?videoid=6285204", "fansub": "LGI", "tip": "url"},
+  {"slug": "grand-blue-season-3", "bolum": 4, "player": "MAIL", "url": "https://my.mail.ru/video/embed/4898784563322426204", "fansub": "LGI", "tip": "url"},
+  {"slug": "youjo-senki-ii", "bolum": 8, "player": "SIBNET", "url": "https://video.sibnet.ru/shell.php?videoid=6286308", "fansub": "LGI", "tip": "url"},
+  {"slug": "youjo-senki-ii", "bolum": 8, "player": "MAIL", "url": "https://my.mail.ru/video/embed/4898784563322426308", "fansub": "LGI", "tip": "url"},
+  {"slug": "youjo-senki-ii", "bolum": 9, "player": "SIBNET", "url": "https://video.sibnet.ru/shell.php?videoid=6286309", "fansub": "LGI", "tip": "url"},
+  {"slug": "youjo-senki-ii", "bolum": 9, "player": "MAIL", "url": "https://my.mail.ru/video/embed/4898784563322426309", "fansub": "LGI", "tip": "url"},
+  {"slug": "youjo-senki-ii", "bolum": 10, "player": "SIBNET", "url": "https://video.sibnet.ru/shell.php?videoid=6286310", "fansub": "LGI", "tip": "url"},
+  {"slug": "youjo-senki-ii", "bolum": 10, "player": "MAIL", "url": "https://my.mail.ru/video/embed/4898784563322426310", "fansub": "LGI", "tip": "url"},
+  {"slug": "kimi-no-koto-ga-daidaidaidaidaisuki-na-100-nin-no-kanojo-3rd-season", "bolum": 4, "player": "SIBNET", "url": "https://video.sibnet.ru/shell.php?videoid=6287404", "fansub": "LGI", "tip": "url"},
+  {"slug": "kimi-no-koto-ga-daidaidaidaidaisuki-na-100-nin-no-kanojo-3rd-season", "bolum": 4, "player": "MAIL", "url": "https://my.mail.ru/video/embed/4898784563322426404", "fansub": "LGI", "tip": "url"},
+  {"slug": "kimi-no-koto-ga-daidaidaidaidaisuki-na-100-nin-no-kanojo-3rd-season", "bolum": 5, "player": "SIBNET", "url": "https://video.sibnet.ru/shell.php?videoid=6287405", "fansub": "LGI", "tip": "url"},
+  {"slug": "kimi-no-koto-ga-daidaidaidaidaisuki-na-100-nin-no-kanojo-3rd-season", "bolum": 5, "player": "MAIL", "url": "https://my.mail.ru/video/embed/4898784563322426405", "fansub": "LGI", "tip": "url"},
+  {"slug": "kimi-no-koto-ga-daidaidaidaidaisuki-na-100-nin-no-kanojo-3rd-season", "bolum": 6, "player": "SIBNET", "url": "https://video.sibnet.ru/shell.php?videoid=6287406", "fansub": "LGI", "tip": "url"},
+  {"slug": "kimi-no-koto-ga-daidaidaidaidaisuki-na-100-nin-no-kanojo-3rd-season", "bolum": 6, "player": "MAIL", "url": "https://my.mail.ru/video/embed/4898784563322426406", "fansub": "LGI", "tip": "url"},
+  {"slug": "nige-jouzu-no-wakagimi-2nd-season", "bolum": 7, "player": "SIBNET", "url": "https://video.sibnet.ru/shell.php?videoid=6288507", "fansub": "LGI", "tip": "url"},
+  {"slug": "nige-jouzu-no-wakagimi-2nd-season", "bolum": 7, "player": "MAIL", "url": "https://my.mail.ru/video/embed/4898784563322426507", "fansub": "LGI", "tip": "url"},
+  {"slug": "nige-jouzu-no-wakagimi-2nd-season", "bolum": 8, "player": "SIBNET", "url": "https://video.sibnet.ru/shell.php?videoid=6288508", "fansub": "LGI", "tip": "url"},
+  {"slug": "nige-jouzu-no-wakagimi-2nd-season", "bolum": 8, "player": "MAIL", "url": "https://my.mail.ru/video/embed/4898784563322426508", "fansub": "LGI", "tip": "url"},
+  {"slug": "nige-jouzu-no-wakagimi-2nd-season", "bolum": 9, "player": "SIBNET", "url": "https://video.sibnet.ru/shell.php?videoid=6288509", "fansub": "LGI", "tip": "url"},
+  {"slug": "nige-jouzu-no-wakagimi-2nd-season", "bolum": 9, "player": "MAIL", "url": "https://my.mail.ru/video/embed/4898784563322426509", "fansub": "LGI", "tip": "url"}
 ];
