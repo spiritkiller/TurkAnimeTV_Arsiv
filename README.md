@@ -86,6 +86,10 @@ Tarayıcı
 | Son büyük temizlik | 01 Ekim 2026 |
 | Aktif video kaynakları | Sibnet (133K), Mail.ru (77K), OK.ru (36K), VK (22K)… |
 
+### Güncelleme Modu (İstek Üzerine / On-Demand)
+* **Kırık Link Temizliği:** Kalan kaynaklar (Sibnet, Mail.ru, VK, Drive vb.) sisteme yük bindirmeden, talep oldukça parti parti taranıp kesinleşen ölü linkler `kaldirilan.js`'e eklenir.
+* **2026 Ağustos & Eylül Animeleri:** turkanime.tv'nin kapanış sürecine denk gelen Ağustos ve Eylül 2026 sezonu yeni animeleri/bölümleri, talep edildikçe parti parti (örn. 5'erli gruplar halinde) arşive `eklenen.js` üzerinden kazandırılır.
+
 ---
 
 ## Katkıda bulunanlar

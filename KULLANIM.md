@@ -198,9 +198,24 @@ Kontrol sonuçları           : C:\Users\naton\Downloads\turkanime_arsiv\url_dur
 Kontrol ilerlemesi          : C:\Users\naton\Downloads\turkanime_arsiv\kontrol_progress.json
 Mirror kopyası (ham)        : C:\Users\naton\Downloads\turkanime_arsiv\mirror
 Python (venv)               : C:\Users\naton\Downloads\.tk-test\Scripts\python.exe
-Yayın adresi                : https://nutaliaxd.github.io/TurkAnimeTV_Arsiv/
+Yayın adresi                : https://spiritkiller.github.io/TurkAnimeTV_Arsiv/
 ```
 
 > **Not:** `animeler\` klasörü (83.489 dosya) sitede kullanılmıyor; git'e
 > ekli durumda. Repo boyutu/Pages limiti açısından ileride `git rm -r --cached
 > animeler/` ile takipten çıkarmayı düşün — kararı senin.
+
+---
+
+## 8. Güncelleme ve Bakım Stratejisi (İstek Üzerine Mod)
+
+Bu projede bakım ve güncelleme işlemleri sabit bir otomasyondan ziyade **kullanıcı talebi doğrultusunda adım adım (on-demand)** yürütülür:
+
+### 8.1. Kırık Link Kontrolü ve Temizliği
+* **Prensip:** Tüm linkler tek seferde taranıp sistem zorlanmaz. Kullanıcı "şimdi X platformunu kontrol edelim" veya "bugün 500 link tarayalım" dedikçe ilgili platformlar taranır.
+* **Kural:** Şüpheli (Cloudflare koruması, 429 rate limit vb.) linkler kesinlikle silinmez. Sadece bağımsız geçişlerle doğrulanan kesin ölü (404 / silinmiş / mahkeme engelli) linkler `kaldirilan.js` dosyasına eklenir.
+
+### 8.2. Yeni Anime ve Bölüm Ekleme (2026 Ağustos & Eylül Sezonu)
+* **Prensip:** turkanime.tv'nin kapandığı döneme (Ağustos & Eylül 2026) ait yeni yayınlanan animeler ve bölümler, kullanıcı talep ettikçe (örneğin: *"Bugün 5 yeni anime ekleyelim"*) parti parti eklenir.
+* **Yöntem:** Yeni veya alternatif linkler doğrudan `eklenen.js` (veya yeni `b/<slug>.js`) dosyasına işlenir. Sitede bu linkler yeşil *"yeni"* rozeti ile görünür.
+* **Senkronizasyon:** Yapılan her ekleme ve temizleme turundan sonra `README.md` bakım tablosu güncellenir ve GitHub reposuna (`main`) pushlanır.
