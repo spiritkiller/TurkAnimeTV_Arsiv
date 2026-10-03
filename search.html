@@ -1582,7 +1582,7 @@ function guncelleGecmisUI(){
     const epMetin = item.epAd || (item.epNo ? item.epNo + '. Bölüm' : '');
     return `
       <div class="pld-item">
-        <a class="pld-poster" href="${esc(item.hash)}">${poster(meta, SZ_CPOS)}</a>
+        <a class="pld-poster" href="${esc(item.hash)}">${poster(meta, SZ_RAY)}</a>
         <a class="pld-info" href="${esc(item.hash)}">
           <div class="pld-name">${esc(item.baslik)}</div>
           <div class="pld-ep">${esc(epMetin)}</div>
@@ -1610,12 +1610,12 @@ function initPlaylistDrawer(){
 
   const openDrawer = ()=>{
     guncelleGecmisUI();
-    drawer.hidden = false;
-    backdrop.hidden = false;
+    drawer.removeAttribute('hidden');
+    backdrop.removeAttribute('hidden');
   };
   const closeDrawer = ()=>{
-    drawer.hidden = true;
-    backdrop.hidden = true;
+    drawer.setAttribute('hidden', '');
+    backdrop.setAttribute('hidden', '');
   };
 
   if (sideBtn) sideBtn.onclick = openDrawer;
@@ -1792,6 +1792,7 @@ function renderHome(){
   appEl().innerHTML = landingHtml();
   bindLanding();
   alOneriKapak();
+  guncelleGecmisUI();
 }
 
 /* ============ M3: Animeler — 6.000+ animenin tam listesi ============ */
@@ -2556,6 +2557,7 @@ function fsAbbr(f){
 function renderPlayer(slug, data, bolumId, playerName, idxStr){
   const ep = findEp(data, bolumId);
   if (!ep){ appEl().innerHTML = `<div class="errbox">Bölüm bulunamadı: ${esc(bolumId)}</div>`; return; }
+  kaydetIzlemeGecmisi(slug, bolumId, ep.ad, ep.no);
   const meta = ANIME.find(a=>a.slug===slug) || {baslik:slug};
   const okey = slug+'|'+bolumId;
   if (plyKey !== okey){ plyKey = okey; plySelFansubs = new Set(); }
@@ -3202,6 +3204,7 @@ document.querySelectorAll('a.logo, a[data-nav="ana"], a[data-nav="ana-mobil"], .
 window.addEventListener('hashchange', route);
 route();
 pingServer();  // M7b: yardımcı sunucu varsa "çöz" butonları görünür olur
+initPlaylistDrawer();
 
 /* ============================================================
    📱 ANILIST GELİNCE YENİDEN ÇİZİM (MOBIL-QOL-PLANI.md §1)
