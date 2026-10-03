@@ -101,28 +101,44 @@ Kullanıcının daha önce izlediği bölümleri takip edebilmesi ve doğrudan k
   * Kullanıcının izlediği tüm animeler afişleri, kaldıkları bölüm bilgisi ve "X dakika/saat önce" süreleriyle listelenir.
   * İstenen bölüm tek tıkla doğrudan açılabilir veya geçmiş temizlenebilir.
 
+---
+
+## 🎭 8. ANIZM Player (anizmplayer.com)
+
+* **Öncelik:** `ANIZM: 15` — AITRVIP'ten sonra, SIBNET'ten önce.
+* **Embed URL Formatı:** `https://anizmplayer.com/video/<hash>` — doğrudan iframe'e alınabilir, `X-Frame-Options` kısıtlaması yok.
+* **İlk Kullanım:** Gangsta. tüm 12 bölümü (PuffyTR/Anizm kaynağı) — 03 Ekim 2026.
+* **Kaynak:** PuffyTR (`https://puffytr.com/gangsta-N-bolum-izle`) sayfalarında oynatıcı `anizmplayer.com/video/...` iframe olarak embed edilir; Playwright ile otomatik çekilebilir.
+
+---
 
 ## 📊 6. Güncel İstatistikler (README Senkronizasyonu - 03 Ekim 2026)
 
 * **Toplam Anime Sayısı:** 6.111
 * **Toplam Bölüm Sayısı:** 71.737
 * **Toplam Video Linki:** ~317.102
-* **Gizlenen Ölü Link Sayısı (`kaldirilan.js`):** 2.497
+* **Gizlenen Ölü Link Sayısı (`kaldirilan.js`):** 2.570 (03 Ekim güncel)
   * `cyberfile.me`: 1.149
   * `dood.watch`: 782
   * `ghbrisk.com`: 322
   * `docs.google.com`: 68
   * `byse.sx`: 57
   * `mp4upload.com`: 48
+  * `video.sibnet.ru`: 81 (Gangsta 71 + önceki 10)
   * `turkanime.tv`: 19
   * `voe.sx`: 18
   * `mega.nz`: 18
-  * `video.sibnet.ru`: 10
-  * Diğer / Çeşitli: 25
+  * Diğer / Çeşitli: 8
 * **Son Büyük Temizlik Tarihi:** 03 Ekim 2026
 * **Yeni Eklenen / İkame Edilen Çalışan Linkler:**
   * Ys 4. Bölüm → OK.ru embed
   * 3-gatsu no Lion 2. Sezon 16. Bölüm → AITRVIP (optraco.top) JWPlayer embed
   * 0-saiji-start-dash-monogatari & Sezon 2 → 5 adet çalışan Mail.ru ve TRAnimeci linki
+  * Gangsta. 1-12. Bölümler → 12 adet Anizmplayer embed (PuffyTR kaynaklı)
+
+| Tarih | Konu / Seri | Yapılan İşlem |
+|---|---|---|
+| **2026-10-03** | **Gangsta. (Sibnet → ANIZM)** | 71 Sibnet linki kaldırıldı, 12 bölümün tamamına anizmplayer.com embed'i eklendi. `ANIZM:15` player `PLAYER_ONCE`'a eklendi. |
 
 *Bu dosya, gelecekteki bakım seanslarında yapay zekanın doğrudan referans alacağı ana rehberdir.*
+
