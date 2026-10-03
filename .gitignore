@@ -128,3 +128,5 @@ __pycache__/
 *.pyo
 .venv/
 venv/
+
+MEMORYBANK.md
