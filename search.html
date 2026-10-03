@@ -345,6 +345,26 @@ h1.anime-title{font:800 26px/1.25 var(--fd);letter-spacing:-.4px;margin-bottom:v
 .player-box.gomulemez .sub{color:var(--tx3);font-size:13px;max-width:52ch;line-height:1.6}
 .player-box.gomulemez .btn{margin-top:var(--sp-1)}
 .jhint{color:var(--tx3);font-size:12px;margin-left:4px}
+/* ===== oynatıcı araç çubuğu (tam ekran & geniş mod) ===== */
+.player-toolbar{display:flex;align-items:center;gap:var(--sp-2);margin:var(--sp-2) 0;flex-wrap:wrap}
+.player-toolbar .btn-fs{background:var(--ac);color:var(--ac-ink);font-weight:700;display:inline-flex;align-items:center;gap:6px;box-shadow:0 2px 8px rgba(0,0,0,.25);transition:all .15s ease}
+.player-toolbar .btn-fs:hover{filter:brightness(1.15);transform:translateY(-1px)}
+.player-toolbar .btn-cinema{background:var(--card2);color:var(--tx2);border:1px solid var(--line);font-weight:600}
+.player-toolbar .btn-cinema:hover{color:var(--ac2);border-color:var(--ac2)}
+.player-toolbar .btn-cinema.on{background:var(--ac);color:var(--ac-ink);border-color:transparent}
+
+/* Tam Ekran & Geniş Mod stilleri */
+.player-box:fullscreen,
+.player-box:-webkit-full-screen{width:100vw !important;height:100vh !important;max-width:none !important;background:#000 !important;display:flex !important;align-items:center !important;justify-content:center !important;border:0 !important;border-radius:0 !important;padding:0 !important;margin:0 !important}
+.player-box:fullscreen iframe,
+.player-box:-webkit-full-screen iframe{width:100% !important;height:100% !important;max-width:none !important;aspect-ratio:auto !important;border:0 !important}
+#frm:fullscreen,
+#frm:-webkit-full-screen{width:100vw !important;height:100vh !important;max-width:none !important;border:0 !important}
+
+/* Sinema / Geniş mod */
+.watch.cinema{grid-template-columns:1fr;grid-template-areas:"top" "bot" "side"}
+.watch.cinema .player-box iframe{max-width:100%;max-height:85vh;max-height:85dvh}
+
 .note-soft{margin-top:var(--sp-2);font-size:12px;color:var(--tx2);background:var(--card);border:1px solid var(--line);border-radius:var(--rad-sm);padding:8px var(--sp-3)}
 .note-soft b{color:var(--tx)}
 .note{background:rgba(255,203,92,.07);border:1px solid rgba(255,203,92,.3);color:#ffe2a0;border-radius:var(--rad);padding:12px var(--sp-4);font-size:13px;margin:var(--sp-3) 0}
@@ -1227,8 +1247,9 @@ const ICONS = {
   bolt:   svgIc('<path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>'),
   clock:  svgIc('<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/>'),
   layers: svgIc('<path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>'),
-  list:   svgIc('<path d="M8 6h13M8 12h13M8 18h13"/><path d="M3 6h.01M3 12h.01M3 18h.01"/>'),
-  ban:    svgIc('<circle cx="12" cy="12" r="9"/><path d="M5.5 5.5l13 13"/>')
+  ban:    svgIc('<circle cx="12" cy="12" r="9"/><path d="M5.5 5.5l13 13"/>'),
+  maximize: svgIc('<path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>'),
+  minimize: svgIc('<path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3"/>')
 };
 function ic(n){ return ICONS[n]||''; }
 
@@ -2704,6 +2725,16 @@ function renderPlayer(slug, data, bolumId, playerName, idxStr){
         ${epNavHtml(slug, data, ep)}
         ${fansubRow}
         ${iframeHtml}
+        ${emb ? `
+        <div class="player-toolbar">
+          <button type="button" class="btn sm btn-fs" id="btnPlayerFullscreen" title="Videoyu tam ekran yap (ESC veya F ile çıkılır)">
+            ${ic('maximize')} <span>Tam Ekran Yap</span>
+          </button>
+          <button type="button" class="btn sm btn-cinema" id="btnCinemaMode" title="Geniş sinema modu (sayfayı kaplar)">
+            ${ic('tv')} <span id="txtCinema">Geniş Mod</span>
+          </button>
+          ${src?`<a class="btn sm ghost" href="${esc(src)}" target="_blank" rel="noopener noreferrer" title="Kaynağı ayrı sekmede aç">${ic('link')} <span>Kaynak Linki</span></a>`:''}
+        </div>` : ''}
         <div class="note-soft">Player açılmadıysa (üçüncü parti host engelleyebilir) <b>kaynak linkini</b> kullan ya da yt-dlp komutuyla indir.</div>
         ${kaynakRow}
       </div>
@@ -2808,7 +2839,67 @@ function renderPlayer(slug, data, bolumId, playerName, idxStr){
   const rv = appEl().querySelector('[data-act="resolve"]');
   if (rv) rv.onclick = ()=> showResolve(rv, rv.dataset.url);
   bindCopy();
+
+  /* Tam Ekran ve Sinema Modu buton bağlamaları */
+  const btnFs = $('#btnPlayerFullscreen');
+  if (btnFs) {
+    btnFs.onclick = () => {
+      togglePlayerFullscreen();
+    };
+  }
+  const btnCin = $('#btnCinemaMode');
+  if (btnCin) {
+    btnCin.onclick = () => {
+      const w = document.querySelector('.watch');
+      if (!w) return;
+      const on = w.classList.toggle('cinema');
+      const txt = $('#txtCinema');
+      if (txt) txt.textContent = on ? 'Normal Boyut' : 'Geniş Mod';
+      btnCin.classList.toggle('on', on);
+    };
+  }
 }
+
+/* ============ tam ekran oynatıcı denetimi ============ */
+function togglePlayerFullscreen(){
+  const ifr = document.getElementById('frm');
+  const box = document.querySelector('.player-box');
+  const target = ifr || box;
+  if (!target) return;
+
+  const isFs = !!(document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement);
+
+  if (!isFs){
+    const fn = target.requestFullscreen || target.webkitRequestFullscreen || target.mozRequestFullScreen || target.msRequestFullscreen;
+    if (fn){
+      const res = fn.call(target);
+      if (res && res.catch){
+        res.catch(()=>{
+          if (box && target !== box){
+            const fnBox = box.requestFullscreen || box.webkitRequestFullscreen || box.mozRequestFullScreen || box.msRequestFullscreen;
+            if (fnBox) fnBox.call(box);
+          }
+        });
+      }
+    }
+  } else {
+    const exit = document.exitFullscreen || document.webkitExitFullscreen || document.mozCancelFullScreen || document.msExitFullscreen;
+    if (exit) exit.call(document);
+  }
+}
+
+function guncelleFullscreenUI(){
+  const btnFs = document.getElementById('btnPlayerFullscreen');
+  if (!btnFs) return;
+  const isFs = !!(document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement);
+  btnFs.innerHTML = isFs 
+    ? `${ic('minimize')} <span>Tam Ekrandan Çık</span>`
+    : `${ic('maximize')} <span>Tam Ekran Yap</span>`;
+}
+document.addEventListener('fullscreenchange', guncelleFullscreenUI);
+document.addEventListener('webkitfullscreenchange', guncelleFullscreenUI);
+document.addEventListener('mozfullscreenchange', guncelleFullscreenUI);
+document.addEventListener('MSFullscreenChange', guncelleFullscreenUI);
 
 /* ============ geri bildirim (buton "done" durumu — ikonu korur) ============ */
 function flashDone(btn, txt, ms, restore){
@@ -3190,6 +3281,12 @@ qEl.addEventListener('input', debounce(()=>{
 document.addEventListener('keydown', e=>{
   if (e.key==='/' && document.activeElement!==qEl && !/INPUT|TEXTAREA/.test(document.activeElement.tagName)){
     e.preventDefault(); qEl.focus();
+  }
+  if ((e.key==='f' || e.key==='F') && document.activeElement!==qEl && !/INPUT|TEXTAREA/.test(document.activeElement.tagName)){
+    if (document.getElementById('frm')){
+      e.preventDefault();
+      togglePlayerFullscreen();
+    }
   }
 });
 
