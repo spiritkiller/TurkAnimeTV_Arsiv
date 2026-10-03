@@ -2502,4 +2502,6 @@ window.KALDIRILAN = [
   "https://dood.watch/e/zth0o823ekpi",
   "https://dood.watch/e/zvxsracil7ef",
   "https://dood.watch/e/zzpx4b7wed2w",
+
+  "https://video.sibnet.ru/shell.php?videoid=4492353"
 ];
