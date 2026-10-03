@@ -75,12 +75,32 @@ Bir bölüme yeni çalışan link eklerken şu standartlara uyulur:
 | **2026-10-03** | **Ys (4. Bölüm)** | 4. bölüme çalışan OK.ru embed'i (`https://ok.ru/videoembed/917285964507`) eklendi. |
 | **2026-10-03** | **Ys (Sibnet Temizliği)** | `b/ys.js` içindeki 9 çalışmayan Sibnet linki kaldırıldı, `kaldirilan.js`'e işlendi. |
 | **2026-10-03** | **3-gatsu no Lion 2. Sezon** | 16. bölüme çalışan AITRVIP JWPlayer embed'i (`optraco.top/...`) eklendi, ölü Sibnet kaldırıldı. |
+| **2026-10-03** | **Devam Et & Playlist** | Kişiye özel 'Kaldığın Yerden Devam Et' ana sayfa kartı ve sağ kenar 'Son İzlenenler' playlist çekmecesi eklendi. |
 | **2026-10-03** | **50 Link Temizliği + 5 İkame** | Arşivdeki 50 ölü link (MP4Upload vb.) `kaldirilan.js`'e eklendi. 5 bölüme çalışan Mail.ru ve TRAnimeci linkleri eklendi. |
 
 ---
 
 
 ---
+
+
+---
+
+## 📺 7. Kaldığın Animeye Devam Et & Kişisel Playlist Çekmecesi
+
+Kullanıcının daha önce izlediği bölümleri takip edebilmesi ve doğrudan kaldığı yerden devam edebilmesi için geliştirilen modül:
+
+* **Depolama Alanı (`localStorage`):** `tk_izleme_gecmisi`
+* **Kayıt Mantığı (`kaydetIzlemeGecmisi`):** Bir anime bölümü açıldığında (`renderPlayer`), animenin slug'ı, başlığı, bölüm numarası, adı, zaman damgası ve doğrudan yönlendirme URL'si (`hash`) en başa kaydedilir (en son 25 kayıt tutulur).
+* **Ana Sayfa Görünümü (`landingHtml`):**
+  * Kullanıcı ana sayfaya (`#/`) döndüğünde, en son izlediği seri en üstte **"▶ Kaldığın Animeye Devam Et"** görsel kartı olarak karşılar.
+  * Kartta animenin afişi, kaldığı bölüm adı, "İzlemeye Devam Et" butonu ve "Listeden Kaldır" seçeneği yer alır.
+* **Sağ Kenar Playlist Çekmecesi (`#sidePlaylistBtn` & `#playlistDrawer`):**
+  * Ekranın sağ kenarında şık bir dikey `[▶ SON İZLENENLER (X)]` butonu yer alır.
+  * Tıklandığında sağdan modern bir çalma listesi paneli açılır.
+  * Kullanıcının izlediği tüm animeler afişleri, kaldıkları bölüm bilgisi ve "X dakika/saat önce" süreleriyle listelenir.
+  * İstenen bölüm tek tıkla doğrudan açılabilir veya geçmiş temizlenebilir.
+
 
 ## 📊 6. Güncel İstatistikler (README Senkronizasyonu - 03 Ekim 2026)
 
