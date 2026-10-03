@@ -12,7 +12,7 @@ Bu doküman, projenin mimarisini, kullanıcı direktiflerini, link temizliği ku
 * **Mimari:** Tamamen statik ve sunucusuz (GitHub Pages).
 * **Veri Yapısı:**
   * `b/<slug>.js`: JSONP formatında anime bölümleri (`window.__TKA__["slug"] = [{no, ad, slug, links, fansubs}]`).
-  * `search.html`: Tek parça ana sayfa, arama motoru, oynatıcı mantığı ve gömülü `window.INDEX` listesi (6.112+ anime).
+  * `search.html`: Tek parça ana sayfa, arama motoru, oynatıcı mantığı ve gömülü `window.INDEX` listesi (6.111+ anime).
   * `kaldirilan.js`: Kırık/ölü linklerin çalışma zamanında filtrelenmesini sağlayan dizi (`window.KALDIRILAN = [...]`).
   * `eklenen.js`: Mevcut animelere dışarıdan yeni link yaması yapan dizi.
 
@@ -70,7 +70,7 @@ Bir bölüme yeni çalışan link eklerken şu standartlara uyulur:
 | Tarih | Konu / Seri | Yapılan İşlem |
 |---|---|---|
 | **2026-10-01** | **Branding** | Logo "Animeci Melkor" olarak güncellendi, arayüzdeki 21 TürkAnime metni temizlendi. |
-| **2026-10-01** | **2026 Sezonu 5 Yeni Anime** | `clevatess`, `clevatess-season-2`, `solo-leveling-season-2`, `dandadan-season-2`, `silent-witch` eklendi (Arşiv 6.107 -> 6.112 oldu). |
+| **2026-10-01** | **2026 Sezonu 5 Yeni Anime** | `clevatess`, `clevatess-season-2`, `solo-leveling-season-2`, `dandadan-season-2`, `silent-witch` eklendi (Arşiv 6.107 -> 6.111 (yinelenen elendi) oldu). |
 | **2026-10-01** | **Silent Witch** | `silent-witch-chinmoku-no-majo-no-kakushigoto` 13 bölüm çalışan TRAnimeci linkleriyle güncellendi. |
 | **2026-10-03** | **Ys (4. Bölüm)** | 4. bölüme çalışan OK.ru embed'i (`https://ok.ru/videoembed/917285964507`) eklendi. |
 | **2026-10-03** | **Ys (Sibnet Temizliği)** | `b/ys.js` içindeki 9 çalışmayan Sibnet linki kaldırıldı, `kaldirilan.js`'e işlendi. |
@@ -78,5 +78,31 @@ Bir bölüme yeni çalışan link eklerken şu standartlara uyulur:
 | **2026-10-03** | **50 Link Temizliği + 5 İkame** | Arşivdeki 50 ölü link (MP4Upload vb.) `kaldirilan.js`'e eklendi. 5 bölüme çalışan Mail.ru ve TRAnimeci linkleri eklendi. |
 
 ---
+
+
+---
+
+## 📊 6. Güncel İstatistikler (README Senkronizasyonu - 03 Ekim 2026)
+
+* **Toplam Anime Sayısı:** 6.111
+* **Toplam Bölüm Sayısı:** 71.737
+* **Toplam Video Linki:** ~317.102
+* **Gizlenen Ölü Link Sayısı (`kaldirilan.js`):** 2.497
+  * `cyberfile.me`: 1.149
+  * `dood.watch`: 782
+  * `ghbrisk.com`: 322
+  * `docs.google.com`: 68
+  * `byse.sx`: 57
+  * `mp4upload.com`: 48
+  * `turkanime.tv`: 19
+  * `voe.sx`: 18
+  * `mega.nz`: 18
+  * `video.sibnet.ru`: 10
+  * Diğer / Çeşitli: 25
+* **Son Büyük Temizlik Tarihi:** 03 Ekim 2026
+* **Yeni Eklenen / İkame Edilen Çalışan Linkler:**
+  * Ys 4. Bölüm → OK.ru embed
+  * 3-gatsu no Lion 2. Sezon 16. Bölüm → AITRVIP (optraco.top) JWPlayer embed
+  * 0-saiji-start-dash-monogatari & Sezon 2 → 5 adet çalışan Mail.ru ve TRAnimeci linki
 
 *Bu dosya, gelecekteki bakım seanslarında yapay zekanın doğrudan referans alacağı ana rehberdir.*

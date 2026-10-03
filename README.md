@@ -3,11 +3,11 @@
 
 # TurkAnimeTV Arşiv
 
-**turkanime.tv 19 Eylül 2026'da bir gece ansızın kapandı ve arkasında devasa bir arşiv bıraktı. Bu proje, o arşivi kurtarmak ve erişilebilir kılmak için başlatıldı. Tamamen statik ve sunucusuz (GitHub Pages) çalışan sitemizde 6.112 anime ve 317.068 video linki bulunuyor. Animelerin isimleri, bölüm linkleri, fansub grupları ve çevirmen bilgileri de açık bir şekilde paylaşılmaktadır.**
+**turkanime.tv 19 Eylül 2026'da bir gece ansızın kapandı ve arkasında devasa bir arşiv bıraktı. Bu proje, o arşivi kurtarmak ve erişilebilir kılmak için başlatıldı. Tamamen statik ve sunucusuz (GitHub Pages) çalışan sitemizde 6.111 anime ve 317.102 video linki bulunuyor. Animelerin isimleri, bölüm linkleri, fansub grupları ve çevirmen bilgileri de açık bir şekilde paylaşılmaktadır.**
 
 [![Website](https://img.shields.io/website?url=https%3A%2F%2Fspiritkiller.github.io%2FTurkAnimeTV_Arsiv%2F&label=canlı%20site)](https://spiritkiller.github.io/TurkAnimeTV_Arsiv/)
-[![Anime](https://img.shields.io/badge/anime-6.112-green)](https://spiritkiller.github.io/TurkAnimeTV_Arsiv/)
-[![Video Linki](https://img.shields.io/badge/video%20linki-317.068-blue)](https://spiritkiller.github.io/TurkAnimeTV_Arsiv/)
+[![Anime](https://img.shields.io/badge/anime-6.111-green)](https://spiritkiller.github.io/TurkAnimeTV_Arsiv/)
+[![Video Linki](https://img.shields.io/badge/video%20linki-317.102-blue)](https://spiritkiller.github.io/TurkAnimeTV_Arsiv/)
 [![Son Güncelleme](https://img.shields.io/badge/son%20güncelleme-Ekim%202026-orange)](https://github.com/spiritkiller/TurkAnimeTV_Arsiv/commits/main)
 
 <!-- TODO: Ekran görüntüsü eklenecek -->
@@ -40,7 +40,7 @@ Elde ettiğimiz veritabanı başlangıçta 1,6 milyona yakın link içeriyordu; 
 
 ## Özellikler
 
-- 🔍 **Anlık arama** (`/` kısayolu), sıralanabilir & filtrelenebilir 6.112 animelik tam liste, kategori sayfaları, rastgele anime butonu
+- 🔍 **Anlık arama** (`/` kısayolu), sıralanabilir & filtrelenebilir 6.111 animelik tam liste, kategori sayfaları, rastgele anime butonu
 - ▶️ **Bölüme tıkla → doğrudan player**; KAYNAK çipleriyle kaynaklar arası hızlı geçiş (çalışan kaynak otomatik seçilir)
 - 🏷️ Bölüm bazlı fansub + çevirmen bilgisi (kaynak çiplerinde ve player kartında görünür)
 - 🛡️ **Override mimarisi**: `kaldirilan.js` ve `eklenen.js` ile 6.107 dosyaya dokunmadan anlık link gizleme/ekleme
@@ -54,7 +54,7 @@ Elde ettiğimiz veritabanı başlangıçta 1,6 milyona yakın link içeriyordu; 
 
 ```
 Tarayıcı
- └─ search.html          → tek dosyalık SPA (gömülü arama dizini: 6.112 anime)
+ └─ search.html          → tek dosyalık SPA (gömülü arama dizini: 6.111 anime)
      ├─ anilist.js       → AniList metadata (kapak, banner, özet, puan…)
      ├─ b/<slug>.js      → her animenin bölümleri + video linkleri (6.107 dosya)
      ├─ kaldirilan.js    → çalışma anında gizlenen linkler   (override)
@@ -80,11 +80,12 @@ Tarayıcı
 
 | Kontrol | Sonuç |
 |---|---|
-| Toplam anime | 6.112 |
-| Toplam video linki | ~317.068 |
-| Gizlenen ölü link | 2.439 (80 + 323 ghbrisk + 69 docs.google + 15 voe.sx + 1.150 cyberfile.me + 19 mega.nz + 783 dood.watch) |
-| Son büyük temizlik | 01 Ekim 2026 |
-| Aktif video kaynakları | Sibnet (133K), Mail.ru (77K), OK.ru (36K), VK (22K)… |
+| Toplam anime | 6.111 |
+| Toplam video linki | ~317.102 |
+| Toplam bölüm | 71.737 |
+| Gizlenen ölü link | 2.497 (1.149 cyberfile.me + 782 dood.watch + 322 ghbrisk + 68 docs.google + 57 byse + 48 mp4upload + 18 voe.sx + 18 mega + 10 sibnet + 25 diğer) |
+| Son büyük temizlik | 03 Ekim 2026 |
+| Aktif video kaynakları | Sibnet (133K), Mail.ru (77K), OK.ru (36K), VK (22K), AITRVIP, GDRIVE… |
 
 ---
 
