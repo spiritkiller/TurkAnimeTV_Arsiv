@@ -1,0 +1,1 @@
+window.__TKA__=window.__TKA__||{};window.__TKA__["black-clover-2nd-season"]=[{"no":1,"ad":"Black Clover 2nd Season 1. Bolum","slug":"black-clover-2nd-season-1-bolum","links":[{"player":"ANIZM","fansub":"Anizm","tip":"url","url":"https://anizmplayer.com/video/94de814c959e278231dbe50c87732ff3"}],"fansubs":[{"ad":"Anizm","bilgi":"PuffyTR / anizmplayer.com"}]}];

@@ -1,0 +1,1 @@
+window.__TKA__=window.__TKA__||{};window.__TKA__["ranma-12-2024-3rd-season"]=[{"no":1,"ad":"Ranma 1/2 (2024) 3rd Season 1. Bolum","slug":"ranma-12-2024-3rd-season-1-bolum","links":[{"player":"ANIZM","fansub":"Anizm","tip":"url","url":"https://anizmplayer.com/video/8b2a1f178ccc4342e354ef7a11801228"}],"fansubs":[{"ad":"Anizm","bilgi":"PuffyTR / anizmplayer.com"}]}];

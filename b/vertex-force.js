@@ -1,0 +1,1 @@
+window.__TKA__=window.__TKA__||{};window.__TKA__["vertex-force"]=[{"no":1,"ad":"Vertex Force 1. Bolum","slug":"vertex-force-1-bolum","links":[{"player":"ANIZM","fansub":"Anizm","tip":"url","url":"https://anizmplayer.com/video/d325c9e2f4daa466b1ce617d374b51d4"}],"fansubs":[{"ad":"Anizm","bilgi":"PuffyTR / anizmplayer.com"}]}];
