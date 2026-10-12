@@ -3,11 +3,11 @@
 
 # TurkAnimeTV Arşiv
 
-**turkanime.tv 19 Eylül 2026'da bir gece ansızın kapandı ve arkasında devasa bir arşiv bıraktı. Bu proje, o arşivi kurtarmak ve erişilebilir kılmak için başlatıldı. Tamamen statik ve sunucusuz (GitHub Pages) çalışan sitemizde 6.116 anime ve 317.045 video linki bulunuyor. Animelerin isimleri, bölüm linkleri, fansub grupları ve çevirmen bilgileri de açık bir şekilde paylaşılmaktadır.**
+**turkanime.tv 19 Eylül 2026'da bir gece ansızın kapandı ve arkasında devasa bir arşiv bıraktı. Bu proje, o arşivi kurtarmak ve erişilebilir kılmak için başlatıldı. Tamamen statik ve sunucusuz (GitHub Pages) çalışan sitemizde 6.116 anime ve 316.995 video linki bulunuyor. Animelerin isimleri, bölüm linkleri, fansub grupları ve çevirmen bilgileri de açık bir şekilde paylaşılmaktadır.**
 
 [![Website](https://img.shields.io/website?url=https%3A%2F%2Fspiritkiller.github.io%2FTurkAnimeTV_Arsiv%2F&label=canlı%20site)](https://spiritkiller.github.io/TurkAnimeTV_Arsiv/)
 [![Anime](https://img.shields.io/badge/anime-6.116-green)](https://spiritkiller.github.io/TurkAnimeTV_Arsiv/)
-[![Video Linki](https://img.shields.io/badge/video%20linki-317.045-blue)](https://spiritkiller.github.io/TurkAnimeTV_Arsiv/)
+[![Video Linki](https://img.shields.io/badge/video%20linki-316.995-blue)](https://spiritkiller.github.io/TurkAnimeTV_Arsiv/)
 [![Son Güncelleme](https://img.shields.io/badge/son%20güncelleme-Ekim%202026-orange)](https://github.com/spiritkiller/TurkAnimeTV_Arsiv/commits/main)
 
 <!-- TODO: Ekran görüntüsü eklenecek -->
@@ -81,10 +81,10 @@ Tarayıcı
 | Kontrol | Sonuç |
 |---|---|
 | Toplam anime | 6.116 |
-| Toplam video linki | ~317.045 |
+| Toplam video linki | ~316.995 |
 | Toplam bölüm | 71.742 |
-| Gizlenen ölü link | 2.670 (1.149 cyberfile.me + 782 dood.watch + 322 ghbrisk + 100 vk + 81 sibnet + 68 docs.google + 57 byse + 48 mp4upload + 19 turkanime.tv + 18 voe.sx + 18 mega + 8 diğer) |
-| Son büyük temizlik | 11 Ekim 2026 |
+| Gizlenen ölü link | 2.720 (1.149 cyberfile.me + 782 dood.watch + 322 ghbrisk + 150 vk + 81 sibnet + 68 docs.google + 57 byse + 48 mp4upload + 19 turkanime.tv + 18 voe.sx + 18 mega + 8 diğer) |
+| Son büyük temizlik | 12 Ekim 2026 |
 | Aktif video kaynakları | Mail.ru (77K), OK.ru (36K), VK (22K), ANIZM, AITRVIP, GDRIVE, UQLOAD… (Sibnet artık son sıraya alındı — Türkiye'den erişilemez) |
 
 ---
@@ -99,6 +99,20 @@ Tarayıcı
 - [**OpenAnime**](https://github.com/OpenAnime) — Projeyi duyurarak daha fazla kişinin haberdar olmasını sağladı.
 - [**AnimeHaber**](https://www.reddit.com/user/AnimeHaber/) — r/lostmediatr üzerinden duyurdu.
 - [**Burakuslendera**](https://github.com/Burakuslendera)
+
+---
+
+## 💖 Destek & Bağış (Support & Contributions)
+
+**Animeci Melkor / TurkAnimeTV Arşiv** topluluk odaklı, kâr amacı gütmeyen bağımsız bir kültürel koruma ve arşiv projesidir. Arşivin güncel tutulmasını, yeni anime bölümlerinin eklenmesini ve kırık linklerin düzenli temizliğini desteklemek isterseniz kripto para ile katkıda bulunabilirsiniz:
+
+- **Bitcoin (BTC):** `15nzhjDB6meaGNUtiTvZSKHHEsHVzZ1T6S`
+- **Tether (USDT):**
+  - **TRC20:** `TV7GLKkrkN94dYwtaxzoubnygJvz9BRCsG`
+  - **BEP20 (BSC):** `0x542bc68515a34e15610cef9322464c4bcced6f75`
+  - **ERC20 (ETH):** `0x542bc68515a34e15610cef9322464c4bcced6f75`
+
+*(Anime kültürel mirasını ve bağımsız fansub arşivini desteklediğiniz için teşekkürler! / Thank you for supporting anime digital preservation!)*
 
 ---
 
