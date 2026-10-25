@@ -3,11 +3,11 @@
 
 # TurkAnimeTV Arşiv
 
-**turkanime.tv 19 Eylül 2026'da bir gece ansızın kapandı ve arkasında devasa bir arşiv bıraktı. Bu proje, o arşivi kurtarmak ve erişilebilir kılmak için başlatıldı. Tamamen statik ve sunucusuz (GitHub Pages) çalışan sitemizde 6.116 anime ve 316.995 video linki bulunuyor. Animelerin isimleri, bölüm linkleri, fansub grupları ve çevirmen bilgileri de açık bir şekilde paylaşılmaktadır.**
+**turkanime.tv 19 Eylül 2026'da bir gece ansızın kapandı ve arkasında devasa bir arşiv bıraktı. Bu proje, o arşivi kurtarmak ve erişilebilir kılmak için başlatıldı. Tamamen statik ve sunucusuz (GitHub Pages) çalışan sitemizde 6.116 anime ve 316.944 video linki bulunuyor. Animelerin isimleri, bölüm linkleri, fansub grupları ve çevirmen bilgileri de açık bir şekilde paylaşılmaktadır.**
 
 [![Website](https://img.shields.io/website?url=https%3A%2F%2Fspiritkiller.github.io%2FTurkAnimeTV_Arsiv%2F&label=canlı%20site)](https://spiritkiller.github.io/TurkAnimeTV_Arsiv/)
 [![Anime](https://img.shields.io/badge/anime-6.116-green)](https://spiritkiller.github.io/TurkAnimeTV_Arsiv/)
-[![Video Linki](https://img.shields.io/badge/video%20linki-316.995-blue)](https://spiritkiller.github.io/TurkAnimeTV_Arsiv/)
+[![Video Linki](https://img.shields.io/badge/video%20linki-316.944-blue)](https://spiritkiller.github.io/TurkAnimeTV_Arsiv/)
 [![Son Güncelleme](https://img.shields.io/badge/son%20güncelleme-Ekim%202026-orange)](https://github.com/spiritkiller/TurkAnimeTV_Arsiv/commits/main)
 
 <!-- TODO: Ekran görüntüsü eklenecek -->
@@ -81,10 +81,10 @@ Tarayıcı
 | Kontrol | Sonuç |
 |---|---|
 | Toplam anime | 6.116 |
-| Toplam video linki | ~316.995 |
+| Toplam video linki | ~316.944 |
 | Toplam bölüm | 71.742 |
-| Gizlenen ölü link | 2.720 (1.149 cyberfile.me + 782 dood.watch + 322 ghbrisk + 150 vk + 81 sibnet + 68 docs.google + 57 byse + 48 mp4upload + 19 turkanime.tv + 18 voe.sx + 18 mega + 8 diğer) |
-| Son büyük temizlik | 12 Ekim 2026 |
+| Gizlenen ölü link | 2.770 (1.149 cyberfile.me + 782 dood.watch + 322 ghbrisk + 200 vk + 81 sibnet + 68 docs.google + 57 byse + 48 mp4upload + 19 turkanime.tv + 18 voe.sx + 18 mega + 8 diğer) |
+| Son büyük temizlik | 25 Ekim 2026 |
 | Aktif video kaynakları | Mail.ru (77K), OK.ru (36K), VK (22K), ANIZM, AITRVIP, GDRIVE, UQLOAD… (Sibnet artık son sıraya alındı — Türkiye'den erişilemez) |
 
 ---
